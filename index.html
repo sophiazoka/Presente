@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gift</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+        .slider-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slider-content img {
+            width: 100%;
+            height: auto;
+        }
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .slider-controls button {
+            background-color: rgba(255, 166, 0, 0.781);
+            color: #000;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 50%;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .slider-controls button:hover {
+            background-color: #9c6722;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>pra vc kjjj :))</h1>
+        <nav>
+            <button onclick="scrollToPoema()">poema</button>
+            <button onclick="scrollToSpotify()">playlist</button>
+            <button onclick="scrollToImagens()">literalmente vosssse</button>
+            <button onclick="scrollToCarta()">carta final</button>
+        </nav>
+    </header>
+    <main>
+        <div id="poema" class="section">
+            <h1> poema (viadei) </h1>
+            <p>Seus cachos,<br>
+            a emboscada.<br>
+            Mergulhando nos olhos castanhos,<br>
+            é o seu mel, me perdendo em seus tons.<br>
+            O corpo arrepia com a sua pele,<br>
+            e como seu toque faz meu ser florar.<br>
+            Seu riso me envolve como ondas,<br>
+            e nessa frequência,<br>
+            você tem levado aquele que erra as batidas ao seu lado.<br>
+            E alarma ele ao ver sua pele corar.<br>
+            E essas suas paletas de cores transmitem um samba,<br>
+            desde o seu ruivo ao carmesim da tua boca.</p>
+        </div>
+        <div id="spotify" class="section">
+            <h1> playlist ;) </h1>
+            <div class="spotify-wrapper">
+                <div class="spotify-embed">
+                    <iframe src="https://open.spotify.com/embed/playlist/3596g5Ifpl70EzMdfaiYxr?utm_source=generator" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="spotify-gif">
+                    <img src="img/charlie brown GIF by Peanuts - Find & Share on GIPHY.gif" alt="GIF">
+                </div>
+            </div>
+        </div>
+        <div id="imagens" class="section">
+            <h2> engual vosse</h2>
+            <div class="slider">
+                <div class="slider-content">
+                 <img src="img/alize de laço.png" alt="">
+                 <img src="img/alice de oculos.png" alt="">
+                 <img src="img/alice dormindinho.jpg" alt="">
+                 <img src="img/alize no hortifruti.jpg" alt="">
+                 <img src="img/alice e pamela.jpg" alt="">
+                 <img src="img/abrazo.gif" alt="">
+                 <img src="img/fofe.jpg" alt="">
+                 <img src="img/alize.jpg" alt="">
+                 <img src="img/desengonçada.jpg" alt="">
+                 <img src="img/cachbashaa.jpg" alt="">
+                 <img src="img/apaixonado.jpg" alt="">
+                 <img src="img/botas.png" alt="">
+                 <img src="img/declaracaio.png" alt="">
+                 <img src="img/pinguininnn.jpg" alt="">
+                 <img src="img/vaidade.jpg" alt="">
+                 <img src="img/uiui.jpg" alt="">
+                 <img src="img/yeehaaa.jpg" alt="">
+                 <img src="img/tonhao auto peças.png" alt="">
+                 <img src="img/sapo.jpg" alt="">
+                 <img src="img/sapin.jpg" alt="">
+                 <img src="img/pobre.png" alt="">
+                 <img src="img/lacday.png" alt="">
+                 <img src="img/gato makonha.jpg" alt="">
+                 <img src="img/fror.jpg" alt="">
+                 <img src="img/bratata.png" alt="">
+                 <img src="img/taylor.jpg" alt="">
+                 <img src="img/intolerante.png" alt="">
+                 <img src="img/telemarketing.png" alt="">
+                 <img src="img/amem.gif" alt="">
+                 <img src="img/arca.gif" alt="">
+                 <img src="img/billie.jpg" alt="">
+                 <img src="img/em nome do pai.gif" alt="">
+                 <img src="img/te gosto.gif" alt="">
+                 <img src="img/Poliana_Moça.png" alt="">
+                 <img src="img/nos.jpg" alt="">
+                 <img src="img/pou rock.jpg" alt="">
+                 <img src="img/leao.jpg" alt="">
+                 <img src="img/festa.gif" alt="">
+                 <img src="img/feliz-domingo-pooh.gif" alt="">
+                 <img src="img/farofa.jpg" alt="">
+                 <img src="img/emoooo.gif" alt="">
+                </div>
+                <div class="slider-controls">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <div id="carta" class="section">
+            <h1>carta final</h1>
+            <p>Diva,<br><br>
+                Eu gosto de você! Isso pode ser óbvio, mas preciso expressar o quanto isso significa para mim. (já era a tempo)<br><br>
+                Comecei a sentir coisas por você, e isso está crescendo ferozmente dentro de mim. Tentei por várias vezes te dizer isso pessoalmente, mas fiquei com medo de ser muito cedo. Agora, sinto que é o momento certo para falar. Sinto muito se isso parecer muito rápido para você, e se você não sentir o mesmo.<br><br>
+                Pode parecer covarde me declarar por um "site", mas tenho medo de não ter outra oportunidade de dizer isso cara a cara (Fonte: Minha cabeça). Muito menos por mensagens, porque nosso diálogo por lá é ainda mais difícil.<br><br>
+                Confesso que, no nosso último encontro, ensaiei várias maneiras de te dizer isso, especialmente depois da sua cartinha. Ainda não entendi exatamente o que você quis dizer, VOCÊ É ENIGMÁTICA E EU SOU UM POUCO LENTA PARA ENTENDER SE NÃO FOR TÃO DIRETO. (autismo)<br><br>
+                Tentei pedir ajuda para amigos para decifrar, mas ainda não consegui. Mesmo assim, tentei levar de uma maneira que só eu sei.<br><br>
+                Alice, espero que você nunca me leve a mal. Apesar de estarmos distantes, espero que não percamos o contato (a menos que você queira). Aprecio muito conversar com você e ouvir suas histórias sobre qualquer coisa aleatória do seu dia. Eu poderia ficar o dia inteiro te escutando, desde como você conseguiu usar o banheiro da empresa até suas fofocas.<br><br>
+                Mesmo que nossas conversas pelo celular sejam rasas e demoradas, ainda assim eu aprecio. E peço desculpas por às vezes te deixar no vácuo; muitas vezes eu só não sei o que responder ou não quero te encher o saco. Não quero passar a imagem de pessoa invasiva.<br><br>
+                Adoro os vídeos, fotos e tiktoks que você manda! Desde a foto da estagiária deitada na sua cama até qualquer tiktok aleatório sobre que personagem da Disney eu seria de acordo com o meu signo.<br><br>
+                Me preocupo com você, mesmo que eu não demonstre isso sempre. Desejo que você fique bem da cabeça! (alice dodóizona da cabeça)<br><br>
+                Se você não estiver sentindo o mesmo que eu, não há problema algum em se afastar ou qualquer coisa do tipo. Respeitarei qualquer decisão sua.<br><br>
+                Com carinho,<br>
+
+                
+                Tonhona.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 sophiazoka. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToPoema() {
+            document.getElementById('poema').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSpotify() {
+            document.getElementById('spotify').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToImagens() {
+            document.getElementById('imagens').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToCarta() {
+            document.getElementById('carta').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        let slideIndex = 1;
+
+        function showSlides(index) {
+            const slides = document.querySelectorAll(".slider-content img");
+            if (index > slides.length) { slideIndex = 1 }
+            if (index < 1) { slideIndex = slides.length }
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === slideIndex - 1) ? "block" : "none";
+            });
+        }
+
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+
+        function prevSlide() {
+            showSlides(slideIndex -= 1);
+        }
+
+        
+        showSlides(slideIndex);
+    </script>
+</body>
+</html>
